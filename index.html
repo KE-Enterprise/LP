@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@:version/:file" />
+    <link rel="stylesheet" href="./src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <i class="nav_logo" id="nav_logo">LOGO</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Compre aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Compre aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+
+            <h2 class="section-title">
+                Nossos Planos
+            </h2>
+
+            <div class="priceDiv" id="priceDiv">
+
+
+                <div class="cardPrice">
+                    <div class="headerPrice">
+                        <span class="title">Plano Inicial</span>
+                        <span class="price">Free</span>
+                    </div>
+                    <p class="desc">Etiam ac convallis enim, eget euismod dolor.</p>
+                    <ul class="lists">
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Aenean quis</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Morbi semper</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Tristique enim nec</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="action">Contratar</button>
+                </div>
+
+                <div class="cardPrice">
+                    <div class="headerPrice">
+                        <span class="title">Plano Avançado</span>
+                        <span class="price">Free</span>
+                    </div>
+                    <p class="desc">Etiam ac convallis enim, eget euismod dolor.</p>
+                    <ul class="lists">
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Aenean quis</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Morbi semper</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Tristique enim nec</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="action">Contratar</button>
+                </div>
+
+                <div class="cardPrice">
+                    <div class="headerPrice">
+                        <span class="title">Plano PRO</span>
+                        <span class="price">Free</span>
+                    </div>
+                    <p class="desc">Etiam ac convallis enim, eget euismod dolor.</p>
+                    <ul class="lists">
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Aenean quis</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Morbi semper</span>
+                        </li>
+                        <li class="list">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Tristique enim nec</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="action">Contratar</button>
+                </div>
+
+            </div>
+
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#0f0e17" fill-opacity="1"
+                        d="M0,128L80,117.3C160,107,320,85,480,90.7C640,96,800,128,960,149.3C1120,171,1280,181,1360,186.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+
+        </section>
+
+        <!-- <section id="menu">
+            <h2 class="section-title">Produtos</h2>
+            <h3 class="section-subtitle">Mais vendidos</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/base.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Base Líquida Lumine
+                    </h3>
+
+                    <span class="dish-description">
+                        Fórmula leve e de longa duração se adapta ao seu tom de pele, oferecendo uma cobertura natural e
+                        uniforme.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$45,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/batom.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Batom Matte Velvet
+                    </h3>
+
+                    <span class="dish-description">
+                        Fórmula enriquecida com manteiga de karité e óleo de jojoba hidrata os lábios, garantindo uma
+                        aplicação suave e precisa.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/delineador.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Delineador Precision
+                    </h3>
+
+                    <span class="dish-description">
+                        Sua fórmula resistente à água e de longa duração garante um acabamento perfeito e sem borrões o
+                        dia todo. Disponível em preto intenso e outras cores vibrantes.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$15,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/primer.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Primer Perfect Skin
+                    </h3>
+
+                    <span class="dish-description">
+                        Enriquecido com vitamina C e extrato de chá verde, ajuda a controlar a oleosidade e prolonga a
+                        duração da maquiagem. Ideal para todos os tipos de pele.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$25,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/karenbac.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Mariana Souza
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Eu simplesmente amei a Base Líquida Lumine! A cobertura é perfeita e super natural.
+                                Minha pele fica radiante o dia todo e, o melhor de tudo, é que não sinto aquela sensação
+                                pesada. Definitivamente, virou minha base favorita!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/ismeiow.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Gabriel Mendes
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "O Batom Matte Velvet é perfeito! A cor é intensa e dura o dia inteiro sem ressecar meus
+                                lábios. A textura é super confortável e realmente fica com um acabamento aveludado.
+                                Recomendo para todas as minhas amigas!"
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+-->
+
+        <!-- TIMELINE / SOBRE -->
+
+        <!-- OBJETIVOS -->
+
+        <section class="about" id="about">
+
+            <div class="design-section" id="objetivos">
+
+                <h2>Objetivos</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-empty">
+
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class="timeline-component timeline-content">
+                        <!-- <h3>HTML</h3> -->
+                        <p>Facilitar o controle de pedidos e pagamentos</p>
+                    </div>
+
+                    <div class="timeline-component timeline-content">
+                        <!-- <h3>CSS</h3> -->
+                        <p>Reduzir erros de comunicação entre o salão e a cozinha</p>
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class="timeline-empty">
+
+                    </div>
+
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class=" timeline-component timeline-content">
+                        <!-- <h3>Javascript</h3> -->
+                        <p>Gerar relatórios detalhados de vendas e fluxo de caixa</p>
+                    </div>
+
+                    <div class="timeline-component timeline-content">
+                        <!-- <h3>HTML</h3> -->
+                        <p>Oferecer um sistema de fácil utilização e acessível a partir de dispositivos móveis e tablets
+                        </p>
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class="timeline-component timeline-content">
+                        <!-- <h3>HTML</h3> -->
+                        <p>Possibilitar a integração com sistemas de pagamento online e gateways de pagamento</p>
+                    </div>
+
+
+                </div>
+
+                <!-- FUNCIONALIDADES -->
+                <div class="design-section" id="funcionalidades">
+
+                    <h2>Funcionalidades</h2>
+
+                    <div class="timeline">
+
+                        <div class="timeline-empty">
+
+                        </div>
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+
+                        <div class="timeline-component timeline-content con-tooltip right">
+                            <!-- <h3>HTML</h3> -->
+                            <!-- <p>Cadastro de Pedidos</p>
+                <div class="tooltip">
+                    - Interface intuitiva para que os garçons registrem os pedidos diretamente na mesa;
+                    - Integração com dispositivos móveis, permitindo que o pedido seja enviado automaticamente para a cozinha/bar;
+                    - Detalhamento dos itens por categoria (pratos principais, bebidas, sobremesas);
+                    - Opções de personalização do pedido (ponto da carne, tipo de molho, etc.).</div> -->
+
+                            <div>
+                                <p> Cadastro de Pedidos </p>
+                                <div class="tooltip ">
+                                    <p>
+                                        - Interface intuitiva para que os garçons registrem os pedidos diretamente na mesa;
+- Integração com dispositivos móveis, permitindo que o pedido seja enviado automaticamente para a cozinha/bar;
+- Detalhamento dos itens por categoria (pratos principais, bebidas, sobremesas);
+- Opções de personalização do pedido (ponto da carne, tipo de molho, etc.).
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-component timeline-content">
+                            <!-- <h3>CSS</h3> -->
+                            <p>Gestão de Mesas</p>
+                        </div>
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+
+                        <div class="timeline-empty">
+
+                        </div>
+
+                        <div class="timeline-empty">
+                        </div>
+
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+
+                        <div class=" timeline-component timeline-content">
+                            <!-- <h3>Javascript</h3> -->
+                            <p>Controle de Pagamentos</p>
+                        </div>
+
+                        <div class="timeline-component timeline-content">
+                            <!-- <h3>HTML</h3> -->
+                            <p>Relatórios de Vendas</p>
+                        </div>
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+
+
+                        <div class="timeline-empty">
+                        </div>
+
+                        <div class="timeline-empty">
+                        </div>
+
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+
+                        <div class="timeline-component timeline-content">
+                            <!-- <h3>HTML</h3> -->
+                            <p>Integração com Cozinha</p>
+                        </div>
+
+                    </div>
+
+    </main>
+    </section>
+</body>
+<script src="src/javascript/script.js"></script>
+
+</html>
