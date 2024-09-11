@@ -1,4 +1,4 @@
-@import url('styles.css');
+@import url('./styles.css');
 
 header {
     width: 100%;
@@ -10,7 +10,6 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--color-Background);
-    /* background-color: purple; */
     z-index: 3;
     transition: all .2s;
     backdrop-filter: blur(7.7px);
@@ -26,7 +25,7 @@ header {
 
 #nav_logo {
     font-size: 24px;
-    color: var(--color-Title);
+    color: white;
 }
 
 #nav_list {
@@ -52,13 +51,68 @@ header {
 }
 
 #mobile_menu {
+    position: absolute;
+    /* display: none; */
+    top: -300px;
+    transition: all .2s;
+}
+
+/* From Uiverse.io by vinodjangid07 */
+#checkbox {
     display: none;
 }
 
-@media screen and (max-width: 1170px) {
+.toggle {
+    display: none;
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+    width: 70%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
 
     #nav_list,
-    #navbar .btn-default {
+    #navbar .btn-default, #checkbox {
         display: none;
     }
 
@@ -70,10 +124,29 @@ header {
         cursor: pointer;
     }
 
-    #mobile_menu.active {
+    .toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .5s;
+    }
+
+    #mobile_menu.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: calc(100dvh - 70px);
+        top: 70px;
+        background-color: #0f0e17e5;
+        transition: all .2s;
     }
 
     #mobile_nav_list {
@@ -86,5 +159,6 @@ header {
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
+        font-size: 22px;
     }
 }

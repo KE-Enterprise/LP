@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $('#mobile_btn').on('click', function () {
+    $('#checkbox').on('click', function () {
         $('#mobile_menu').toggleClass('active');
-        $('#mobile_btn').find('i').toggleClass('fa-x');
+        $('#checkbox').find('i').toggleClass('fa-x');
     });
 
     const sections = $('section');

@@ -1,121 +1,95 @@
-@import url('styles.css');
+.home {
+  padding: 0;
+  height: 100dvh;
+  display: flex;
+}
 
-#home {
+.backgroundPOG {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 100dvh;
+  z-index: -1;
+  display: flex;
+  background: rgb(15,14,23);
+  background: linear-gradient(90deg, rgba(15,14,23,1) 55%, rgba(13,12,62,0.7609418767507002) 80%, rgba(12,11,81,0.13068977591036413) 98%, rgba(9,9,121,0) 100%);
+}
+
+.backgroundPOG .img_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/images/BG-home.png');
+  background-size:cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.backgroundPOG .empty {
+  width: 50%;
+  height: 100%;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+  background: rgb(15,14,23);
+  background: linear-gradient(90deg, rgba(15,14,23,1) 55%, rgba(13,12,62,0.7609418767507002) 80%, rgba(12,11,81,0.13068977591036413) 98%, rgba(9,9,121,0) 100%);
+}
+
+.text-box {
+  width: 60%;
+}
+
+h1 {
+  font-size: 25px;
+  color: #ff8906;
+}
+
+h2 {
+  color: #fffffe;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #home {
+    background: rgb(15,14,23);
+    background: linear-gradient(0deg, rgba(15,14,23,1) 35%, rgba(13,12,62,0.7609418767507002) 60%, rgba(12,11,81,0.13068977591036413) 78%, rgba(9,9,121,0) 100%);
+  }
+  
+  .home-text {
+    padding-bottom: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100dvh - 90px);
-    position: relative;
-    /* background-color: var(--color-Background-Secondary); */
-}
-
-#home h2 {
-    padding: 40px 0;
-}
-
-.priceDiv {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.cardPrice:hover {
-    transform: perspective(500px) rotateY(0) scale(1.04);
-    transition: all .2s;
-}
-
-.cardPrice {
-    width: 280px;
-    height: 425px;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-bottom: 2rem;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.50rem;
-    background-color: var(--color-Card-Background);
-    padding: 1.5rem;
-}
-
-.headerPrice {
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    color: var(--color-Card-Heading)
-}
-
-.price {
-    font-size: 3.75rem;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--color-Card-Heading)
-}
-
-.desc {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.625;
-    color: var(--color-Card-Heading);
-}
-
-.lists {
-    margin-bottom: 1.5rem;
-    flex: 1 1 0%;
-    color: var(--color-Card-Heading);
-}
-
-.lists .list {
-    margin-bottom: 0.5rem;
-    display: flex;
-    margin-left: 0.5rem
-}
-
-.lists .list svg {
-    height: 1.5rem;
-    width: 1.5rem;
-    flex-shrink: 0;
-    margin-right: 0.5rem;
-    color: var(--color-Li);
-}
-
-.action {
-    border: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 0.25rem;
-    background-color: var(--color-Button-Background);
-    color: var(--color-Button-Text);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    flex-direction: column reverse;
     text-align: center;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
+    justify-content: flex-end;
+    height: calc(100dvh - 70px);
+    width: 100%;
+    background: rgb(15,14,23);
+    background: linear-gradient(0deg, rgba(15,14,23,1) 35%, rgba(9,9,121,0) 100%);
+  }
 
-.action:hover {
-    color: var(--color-Button-Background);
-    background-color: var(--color-Card-Heading);
+  h1 {
+    font-size: 1.5rem;
+    color: #ff8906;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    color: #fffffe;
+  }
 
-}
+  #home .empty {
+    width: 0;
+  }
 
-.wave {
-    position: absolute;
-    top: 0;
-    width: 300%;
-    height: 200px;
-    z-index: -1;
+  .backgroundPOG .img_bg {
+    background-image: url('/src/images/BG-home-mobile.png');
+    background-size: cover;
+    background-position: right bottom;
+  }
 }

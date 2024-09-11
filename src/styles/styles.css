@@ -1,41 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('header.css');
-@import url('home.css');
-@import url('menu.css');
-@import url('testimonials.css');
-@import url('footer.css');
-@import url('topics.css');
+
+@import url('./header.css');
+@import url('./home.css');
+@import url('./plans.css');
+@import url('./menu.css');
+@import url('./testimonials.css');
+@import url('./footer.css');
+@import url('./topics.css');
+@import url('./waves.css');
 
 :root {
     --color-Background: #fffffe;
     --color-Background-Secondary: #5000ca;
-    --color-Title: #0f0e17;
-    --color-Headline: #0f0e17;
-    --color-Sub-Headline: #2e2f3e;
+    --color-Title: #fffffe;
+    --color-Logo: #0f0e17;
     --color-li: #0f0e17;
     --color-li-active: #ff8906;
-
-
-    --color-Card-Background: #0f0e17;
-    --color-Card-Heading: #fffffe;
+    
+    --color-Card-Background: #fffffe;
+    --color-Card-Heading: #0f0e17;
     --color-Card-Paragraph: #a7a9be;
     --color-Stroke: black;
-    --color-Button-Background: #fffffe;
-    --color-Button-Text: #ff8906;
-
-    --color-neutral-0: #fff;
-    --color-neutral-1: #1d1d1d;
+    --color-Button-Background: #ff8906;
+    --color-Button-Text: #0f0e17;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-Background: #0f0e17;
-        --color-Title: #fffffe;
-        --color-Headline: #fffffe;
-        --color-Sub-Headline: #a7a9be;
+        --color-Background-Secondary: #5000ca;
+        --color-Title: #0f0e17;
+        --color-Logo: #fffffe;
         --color-li: #fffffe;
         --color-li-active: #ff8906;
-
 
         --color-Card-Background: #fffffe;
         --color-Card-Heading: #0f0e17;
@@ -43,9 +40,6 @@
         --color-Stroke: black;
         --color-Button-Background: #ff8906;
         --color-Button-Text: #fffffe;
-
-        --color-neutral-0: #fff;
-        --color-neutral-1: #1d1d1d;
     }
 }
 
@@ -63,10 +57,14 @@ html {
 
 body {
     background-color: var(--color-Background-Secondary);
+    overflow-x: hidden;
 }
 
 section {
     padding: 28px 8%;
+}
+
+main {
     overflow: hidden;
 }
 
@@ -116,8 +114,10 @@ section {
 }
 
 .section-title {
-    color: var(--color-Title);
+    color: white;
     font-size: 1.563rem;
+    /* font-size: 40px; */
+    padding: 40px 0;
 }
 
 .section-subtitle {
@@ -136,7 +136,7 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-Title);
+    background: var(--color-Card-Background);
     border-radius: 50px;
 }
 
@@ -145,3 +145,9 @@ section {
     background: var(--color-li-active);
     transition: all .2s;
 }
+/* 
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+} */
